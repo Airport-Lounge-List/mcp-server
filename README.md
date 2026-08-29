@@ -109,9 +109,23 @@ Same team, same install pattern — each is a separate remote MCP server:
 
 The `discover_more_flight_tools` tool returns the same list with install snippets.
 
-## Registry
+## Registry and plugin catalogs
 
-Published to the official MCP registry as `com.airportloungelist/lounges`. See [`server.json`](server.json).
+| Catalog | Entry |
+|---|---|
+| Official MCP registry | `com.airportloungelist/lounges` — see [`server.json`](server.json) |
+| Grok Build plugin marketplace | `airport-lounge-list` — see [`.grok-plugin/plugin.json`](.grok-plugin/plugin.json) |
+| Gemini CLI extensions | this repo — see [`gemini-extension.json`](gemini-extension.json) |
+
+## Network access and credentials
+
+The plugin declares exactly one network endpoint, `https://mcp.airportloungelist.com/mcp`, configured in
+[`.mcp.json`](.mcp.json). It ships no hooks, no scripts and no executable code — there is nothing to run
+locally, so nothing reads your filesystem, environment or shell.
+
+No credentials are needed for the eight public tools. The thirteen account tools use OAuth 2.1: your client
+registers itself and opens a browser for consent, and the resulting token is held by your client. We never see
+a password, and you can revoke access at any time from your account settings.
 
 ## About
 
