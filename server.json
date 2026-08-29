@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.airportloungelist/lounges",
+  "title": "Airport Lounge List",
+  "description": "Search airport lounges worldwide. Find which lounges a credit card, membership, airline status or ticket class gets you into, with amenities, hours, terminal and reviews.",
+  "version": "0.7.0",
+  "websiteUrl": "https://airportloungelist.com",
+  "repository": {
+    "url": "https://github.com/Airport-Lounge-List/mcp-server",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.airportloungelist.com/mcp"
+    }
+  ]
+}

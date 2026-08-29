@@ -1,0 +1,10 @@
+{
+  "name": "airport-lounge-list",
+  "version": "0.7.0",
+  "description": "Search airport lounges worldwide and check which ones your card, status or membership gets you into.",
+  "mcpServers": {
+    "airport-lounge-list": {
+      "httpUrl": "https://mcp.airportloungelist.com/mcp"
+    }
+  }
+}
