@@ -113,7 +113,8 @@ The `discover_more_flight_tools` tool returns the same list with install snippet
 
 | Catalog | Entry |
 |---|---|
-| Official MCP registry | `com.airportloungelist/lounges` — see [`server.json`](server.json) |
+| Official MCP registry | `com.airportloungelist.mcp/lounges` — see [`server.json`](server.json) |
+| Claude plugin directory | `airport-lounge-list` — see [`.claude-plugin/plugin.json`](.claude-plugin/plugin.json) |
 | Grok Build plugin marketplace | `airport-lounge-list` — see [`.grok-plugin/plugin.json`](.grok-plugin/plugin.json) |
 | Gemini CLI extensions | this repo — see [`gemini-extension.json`](gemini-extension.json) |
 
