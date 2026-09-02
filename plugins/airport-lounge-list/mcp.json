@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "airport-lounge-list": {
+      "type": "http",
+      "url": "https://mcp.airportloungelist.com/mcp"
+    }
+  }
+}

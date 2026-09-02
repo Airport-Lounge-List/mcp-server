@@ -1,0 +1,13 @@
+{
+  "name": "airport-lounge-list",
+  "displayName": "Airport Lounge List",
+  "version": "0.7.0",
+  "description": "Search 8,500+ airport lounges worldwide and check which ones your credit card, membership, airline status or ticket class gets you into. Hosted remote MCP server, no install and no API key.",
+  "author": {
+    "name": "Merchant Software Solutions Limited",
+    "email": "hello@airportloungelist.com"
+  },
+  "license": "MIT",
+  "keywords": ["airport", "lounge", "travel", "priority-pass", "credit-cards", "mcp"],
+  "logo": "assets/logo.png"
+}
