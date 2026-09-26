@@ -1,6 +1,6 @@
 {
   "name": "airport-lounge-list",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "description": "Search 8,500+ airport lounges worldwide and check which ones your credit card, membership, airline status or ticket class gets you into. Hosted remote MCP server, no install and no API key.",
   "homepage": "https://airportloungelist.com/mcp",
   "repository": "https://github.com/Airport-Lounge-List/mcp-server",
