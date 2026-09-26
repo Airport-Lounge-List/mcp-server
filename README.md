@@ -74,6 +74,21 @@ The other thirteen read or change your own reviews, visits and wishlist, and nee
 Every tool declares MCP `title` and `annotations` (`readOnlyHint`, `destructiveHint`, `idempotentHint`,
 `openWorldHint`), so a client can tell a read from a write before it calls anything.
 
+## Skills
+
+The Claude Code plugin ships eight skills in `skills/`. Each one tells the agent which tools to call, in which order. The same documents are live at `https://airportloungelist.com/skills/<id>.md`.
+
+| Skill | Use it for |
+|---|---|
+| `find-airport-lounges` | Lounges at an airport or in a city |
+| `check-lounge-access` | Does my card or status get me in? |
+| `compare-lounge-networks` | Priority Pass vs LoungeKey vs DragonPass |
+| `plan-layover-lounges` | Best lounge at each stop of an itinerary |
+| `track-lounge-visits` | Log a visit and write a review (OAuth) |
+| `manage-lounge-history` | Edit or delete visits and reviews (OAuth) |
+| `lounge-wishlist-and-passport` | Profile, passport stats and wishlist (OAuth) |
+| `plan-whole-trip` | Hand off to seat map, award and queue MCPs |
+
 ## Transport and authentication
 
 **Streamable HTTP.** SSE is not used.
