@@ -1,5 +1,5 @@
 ---
-name: check-lounge-access
+name: "check-lounge-access"
 description: "Work out whether a specific credit card, membership, airline status or day pass gets you into a given lounge."
 ---
 
@@ -21,7 +21,7 @@ Work out whether a specific credit card, membership, airline status or day pass 
 
 ### `find_lounges_by_access`
 
-Find all airport lounges accessible with a specific credit card, membership program, airline club, alliance status, or ticket class. For example, find all lounges you can access with your Amex Platinum or Priority Pass membership.
+Find all airport lounges accessible with a specific credit card, membership program, airline club, alliance status, or ticket class. For example, find all lounges you can access with your Amex Platinum or Priority Pass membership. Pass airport to limit the results to one airport, e.g. the lounges an Amex Platinum card opens at JFK.
 
 ```json
 {
@@ -39,13 +39,24 @@ Find all airport lounges accessible with a specific credit card, membership prog
         "marriott-brilliant",
         "ritz-carlton",
         "bilt-mastercard",
+        "amex-business-platinum",
+        "delta-reserve",
+        "united-club-infinite",
+        "united-explorer",
+        "citi-aadvantage-executive",
+        "us-bank-altitude-reserve",
+        "venture-x-business",
         "priority-pass",
         "loungekey",
         "dragonpass",
         "diners-club",
         "plaza-premium",
+        "capital-one-lounge",
+        "chase-sapphire-lounge",
         "business-class",
         "first-class",
+        "day-pass",
+        "military",
         "united-club",
         "delta-sky-club",
         "admirals-club",
@@ -59,6 +70,11 @@ Find all airport lounges accessible with a specific credit card, membership prog
         "skyteam-elite-plus"
       ],
       "description": "Access method slug (e.g. amex-platinum, priority-pass, chase-sapphire-reserve, business-class, star-alliance-gold)"
+    },
+    "airport": {
+      "type": "string",
+      "pattern": "^[A-Za-z]{3}$",
+      "description": "Optional airport IATA code (e.g. JFK, LHR). Only lounges at this airport are returned."
     }
   },
   "required": [
@@ -108,4 +124,5 @@ Get detailed information about a specific airport lounge by its slug. Returns fu
 
 ## Authentication
 
-None. Call the endpoint anonymously.
+Requires an OAuth 2.1 access token with the `read` scope. See
+<https://airportloungelist.com/auth.md>.

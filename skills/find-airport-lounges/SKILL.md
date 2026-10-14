@@ -1,5 +1,5 @@
 ---
-name: find-airport-lounges
+name: "find-airport-lounges"
 description: "List every lounge at an airport or in a city, with terminal, hours, amenities and how to get in."
 ---
 
@@ -88,4 +88,5 @@ Get detailed information about a specific airport lounge by its slug. Returns fu
 
 ## Authentication
 
-None. Call the endpoint anonymously.
+Requires an OAuth 2.1 access token with the `read` scope. See
+<https://airportloungelist.com/auth.md>.

@@ -76,7 +76,7 @@ Every tool declares MCP `title` and `annotations` (`readOnlyHint`, `destructiveH
 
 ## Skills
 
-The Claude Code plugin ships eight skills in `skills/`. Each one tells the agent which tools to call, in which order. The same documents are live at `https://airportloungelist.com/skills/<id>.md`.
+The Claude Code plugin ships sixteen skills in `skills/`. Each one tells the agent which tools to call, in which order. The same documents are live at `https://airportloungelist.com/skills/<id>.md`.
 
 | Skill | Use it for |
 |---|---|
@@ -88,6 +88,14 @@ The Claude Code plugin ships eight skills in `skills/`. Each one tells the agent
 | `manage-lounge-history` | Edit or delete visits and reviews (OAuth) |
 | `lounge-wishlist-and-passport` | Profile, passport stats and wishlist (OAuth) |
 | `plan-whole-trip` | Hand off to seat map, award and queue MCPs |
+| `choose-lounge-credit-card` | Which card opens the most lounges at my airports? |
+| `does-my-card-get-lounge-access` | Yes or no for one card or status |
+| `buy-lounge-day-pass` | Pay-at-the-door lounges at an airport |
+| `list-lounge-brand-locations` | Every Priority Pass, Capital One, Centurion or Chase Sapphire lounge |
+| `airline-lounge-access` | Delta Sky Club, United Club, Admirals Club and alliance lounges |
+| `find-lounge-by-amenity` | Showers, sleeping pods or a spa at an airport |
+| `best-lounges-at-airport` | Top-rated lounges at an airport |
+| `lounge-tool-best-practice` | Rules that stop guessed slugs and rate-limit errors |
 
 ## Transport and authentication
 
