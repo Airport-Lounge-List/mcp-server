@@ -1,5 +1,5 @@
 ---
-name: manage-lounge-history
+name: "manage-lounge-history"
 description: "Review, correct or delete a signed-in user's logged visits and reviews. Requires OAuth with the write scope."
 ---
 

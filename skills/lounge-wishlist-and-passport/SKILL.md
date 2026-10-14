@@ -1,5 +1,5 @@
 ---
-name: lounge-wishlist-and-passport
+name: "lounge-wishlist-and-passport"
 description: "Show a signed-in user's profile, lounge passport stats and wishlist, and add or remove wishlist lounges. Requires OAuth."
 ---
 

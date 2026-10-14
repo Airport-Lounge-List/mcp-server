@@ -1,5 +1,5 @@
 ---
-name: plan-layover-lounges
+name: "plan-layover-lounges"
 description: "Given an itinerary and the cards or memberships a traveller holds, find the best lounge they can enter at each departure and connection airport."
 ---
 
@@ -82,4 +82,5 @@ Get detailed information about a specific airport lounge by its slug. Returns fu
 
 ## Authentication
 
-None. Call the endpoint anonymously.
+Requires an OAuth 2.1 access token with the `read` scope. See
+<https://airportloungelist.com/auth.md>.

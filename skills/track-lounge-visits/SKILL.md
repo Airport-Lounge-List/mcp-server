@@ -1,5 +1,5 @@
 ---
-name: track-lounge-visits
+name: "track-lounge-visits"
 description: "Log a lounge visit, write or edit a review, and manage a wishlist on behalf of a signed-in user. Requires OAuth with the write scope."
 ---
 
