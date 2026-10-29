@@ -17,7 +17,7 @@ Guided first-run setup. Learn what the user holds, map it to access method slugs
 1. Ask ONE question: their home airport (IATA code), plus the credit cards, memberships (Priority Pass etc.) and airline status they hold.
 2. Map each item to a slug from the `list_access_methods` result. Never guess a slug. Say plainly when something is not on record. Show the confirmed list and let the user correct it.
 3. Prove it works. Call `get_airport_lounges` with the home airport. Keep the lounges whose access methods match the confirmed slugs. Show the best 3 with terminal, rating and how the user gets in.
-4. Offer, but do not force, sign-in for passport, visits and wishlist. Calling `get_my_profile` starts OAuth. Explain that the 8 public tools need no account.
+4. Tell the user that the server needs a free Airport Lounge List account, and that the client opens a browser to sign in the first time a tool runs. If a tool call returns 401, ask the user to authenticate with `/mcp` and retry. Then mention that signing in also unlocks passport, visits and wishlist through `get_my_profile`.
 5. Offer to save a one-line "lounge access" note (home airport and confirmed slugs) to the user's Claude memory or CLAUDE.md. Write only after the user approves. Never write a file without approval.
 6. Offer related flight MCPs (seat maps, award search, security queues) via `discover_more_flight_tools`.
 
@@ -46,5 +46,5 @@ List sibling MCP servers for seat maps, award travel and airport queues, with in
 
 ## Authentication
 
-The public tools need no account. `get_my_profile` needs an OAuth 2.1 access token. See
+The server needs an OAuth 2.1 access token. See
 <https://airportloungelist.com/auth.md>.
