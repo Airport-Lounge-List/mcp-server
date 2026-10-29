@@ -10,8 +10,8 @@ networks like Priority Pass, and — once you sign in — log visits, write revi
 https://mcp.airportloungelist.com/mcp
 ```
 
-There is nothing to install and no API key to copy. Add the URL to your MCP client and the tools appear.
-The eight lounge-data tools work immediately, with no account.
+There is nothing to install and no API key to copy. Add the URL to your MCP client. It opens a browser to sign in
+with a free Airport Lounge List account the first time a tool runs.
 
 ## Install
 
@@ -73,11 +73,11 @@ gemini extensions install https://github.com/Airport-Lounge-List/mcp-server
 
 21 tools — see [TOOLS.md](TOOLS.md) for the full table with titles and descriptions.
 
-Eight are public and need no account: `search_lounges`, `get_airport_lounges`, `get_lounge_details`,
+Eight are lounge-data tools: `search_lounges`, `get_airport_lounges`, `get_lounge_details`,
 `find_lounges_by_access`, `list_access_methods`, `list_networks`, `get_network_lounges`,
 `discover_more_flight_tools`.
 
-The other thirteen read or change your own reviews, visits and wishlist, and need OAuth.
+The other thirteen read or change your own reviews, visits and wishlist. Every tool needs an OAuth sign-in.
 
 Every tool declares MCP `title` and `annotations` (`readOnlyHint`, `destructiveHint`, `idempotentHint`,
 `openWorldHint`), so a client can tell a read from a write before it calls anything.
@@ -110,16 +110,16 @@ The Claude Code plugin ships seventeen skills in `skills/`. Each one tells the a
 
 **Streamable HTTP.** SSE is not used.
 
-Public tools need no token and are rate limited per IP address. Signing in lifts the limit.
+Every request needs an OAuth 2.1 bearer token. Sign-in is free.
 
-Tools that touch your own data use **OAuth 2.1** with PKCE and
+The server uses **OAuth 2.1** with PKCE and
 [RFC 7591](https://datatracker.ietf.org/doc/html/rfc7591) dynamic client registration, so a compliant client
 registers itself and opens a browser for consent — no keys to paste. Scopes are `read` and `write`; the eight
 mutating tools require `write`.
 
-Calling a protected tool without a token returns `401` with a `WWW-Authenticate` header pointing at the
+Calling the server without a token returns `401` with a `WWW-Authenticate` header pointing at the
 [RFC 9728](https://datatracker.ietf.org/doc/html/rfc9728) protected-resource document, which is how your client
-discovers the authorization server. `initialize`, `tools/list` and the public tools never return that challenge.
+discovers the authorization server.
 
 ## Discovery documents
 
@@ -156,7 +156,7 @@ The plugin declares exactly one network endpoint, `https://mcp.airportloungelist
 [`.mcp.json`](.mcp.json). It ships no hooks, no scripts and no executable code — there is nothing to run
 locally, so nothing reads your filesystem, environment or shell.
 
-No credentials are needed for the eight public tools. The thirteen account tools use OAuth 2.1: your client
+No API key is needed. Every tool uses OAuth 2.1: your client
 registers itself and opens a browser for consent, and the resulting token is held by your client. We never see
 a password, and you can revoke access at any time from your account settings.
 
