@@ -12,7 +12,7 @@ first-class entities, so you can also list every lounge in a network.
 ## What you get
 
 This plugin adds one hosted remote MCP server. There is nothing to install and
-no API key. The 8 directory tools need no account:
+no API key. Sign in with a free account the first time a tool runs. The 8 directory tools:
 
 | Tool | What it does |
 | --- | --- |
