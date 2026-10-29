@@ -15,7 +15,15 @@ The eight lounge-data tools work immediately, with no account.
 
 ## Install
 
-**Claude Code**
+**Claude Code (recommended)** — installs the plugin with all skills and a guided setup:
+
+```bash
+claude plugin marketplace add Airport-Lounge-List/mcp-server && claude plugin install airport-lounge-list@airport-lounge-list
+```
+
+Then run `/airport-lounge-list:setup`.
+
+**Claude Code, MCP only**
 
 ```bash
 claude mcp add airport-lounge-list --transport http https://mcp.airportloungelist.com/mcp
@@ -76,10 +84,11 @@ Every tool declares MCP `title` and `annotations` (`readOnlyHint`, `destructiveH
 
 ## Skills
 
-The Claude Code plugin ships sixteen skills in `skills/`. Each one tells the agent which tools to call, in which order. The same documents are live at `https://airportloungelist.com/skills/<id>.md`.
+The Claude Code plugin ships seventeen skills in `skills/`. Each one tells the agent which tools to call, in which order. The same documents are live at `https://airportloungelist.com/skills/<id>.md`.
 
 | Skill | Use it for |
 |---|---|
+| `setup` | First-run setup: home airport, cards, status, then a live check |
 | `find-airport-lounges` | Lounges at an airport or in a city |
 | `check-lounge-access` | Does my card or status get me in? |
 | `compare-lounge-networks` | Priority Pass vs LoungeKey vs DragonPass |

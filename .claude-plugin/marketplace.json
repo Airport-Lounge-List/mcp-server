@@ -1,0 +1,15 @@
+{
+  "name": "airport-lounge-list",
+  "owner": {
+    "name": "Merchant Software Solutions Limited",
+    "email": "hello@airportloungelist.com"
+  },
+  "plugins": [
+    {
+      "name": "airport-lounge-list",
+      "source": "./",
+      "description": "Search 8,500+ airport lounges worldwide and check which ones your credit card, membership, airline status or ticket class gets you into. Run /airport-lounge-list:setup to get started.",
+      "version": "0.9.0"
+    }
+  ]
+}
