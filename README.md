@@ -18,7 +18,7 @@ with a free Airport Lounge List account the first time a tool runs.
 **Claude Code (recommended)** — installs the plugin with all skills and a guided setup:
 
 ```bash
-claude plugin marketplace add Airport-Lounge-List/mcp-server && claude plugin install airport-lounge-list@airport-lounge-list
+claude plugin marketplace add Airport-Lounge-List/mcp && claude plugin install airport-lounge-list@airport-lounge-list
 ```
 
 Then run `/airport-lounge-list:setup`.
@@ -42,7 +42,7 @@ claude mcp add airport-lounge-list --transport http https://mcp.airportloungelis
 **Gemini CLI** — this repository is a Gemini CLI extension:
 
 ```bash
-gemini extensions install https://github.com/Airport-Lounge-List/mcp-server
+gemini extensions install https://github.com/Airport-Lounge-List/mcp
 ```
 
 **Clients without native remote-server support** can bridge with
