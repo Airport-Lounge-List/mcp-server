@@ -6,7 +6,7 @@
   },
   "metadata": {
     "description": "Airport lounge directory tools for Cursor",
-    "version": "0.7.0"
+    "version": "0.10.0"
   },
   "plugins": [
     {
