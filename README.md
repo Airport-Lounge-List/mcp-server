@@ -71,13 +71,16 @@ gemini extensions install https://github.com/Airport-Lounge-List/mcp-server
 
 ## Tools
 
-21 tools — see [TOOLS.md](TOOLS.md) for the full table with titles and descriptions.
+30 tools — see [TOOLS.md](TOOLS.md) for the full table with titles and descriptions.
 
-Eight are lounge-data tools: `search_lounges`, `get_airport_lounges`, `get_lounge_details`,
+Sixteen are lounge-data tools: `search_lounges`, `get_airport_lounges`, `get_lounge_details`,
 `find_lounges_by_access`, `list_access_methods`, `list_networks`, `get_network_lounges`,
-`discover_more_flight_tools`.
+`find_nearby_lounges`, `search_airports`, `get_lounge_busyness`, `find_lounges_by_amenity`,
+`list_lounge_brands`, `get_brand_lounges`, `get_public_passport`, `lounge_browser` and
+`submit_feedback`.
 
-The other thirteen read or change your own reviews, visits and wishlist. Every tool needs an OAuth sign-in.
+The other fourteen read or change your own reviews, visits, wishlist and passport settings.
+Every tool needs an OAuth sign-in.
 
 Every tool declares MCP `title` and `annotations` (`readOnlyHint`, `destructiveHint`, `idempotentHint`,
 `openWorldHint`), so a client can tell a read from a write before it calls anything.
