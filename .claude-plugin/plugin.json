@@ -5,10 +5,19 @@
   "homepage": "https://airportloungelist.com/mcp",
   "repository": "https://github.com/Airport-Lounge-List/mcp",
   "license": "MIT",
-  "keywords": ["airport", "lounge", "travel", "priority-pass", "credit-cards", "mcp"],
+  "keywords": [
+    "airport",
+    "lounge",
+    "travel",
+    "priority-pass",
+    "credit-cards",
+    "mcp"
+  ],
   "author": {
     "name": "Merchant Software Solutions Limited",
     "email": "hello@airportloungelist.com",
     "url": "https://airportloungelist.com"
-  }
+  },
+  "privacyPolicyUrl": "https://airportloungelist.com/privacy",
+  "icon": "./.claude-plugin/icon.png"
 }
