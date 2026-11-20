@@ -176,5 +176,5 @@ Delete your review of a lounge. Identify it by lounge_slug.
 
 ## Authentication
 
-Requires an OAuth 2.1 access token with the `write` scope. See
+Requires an OAuth 2.1 sign-in with the `write` scope. See
 <https://airportloungelist.com/auth.md>.

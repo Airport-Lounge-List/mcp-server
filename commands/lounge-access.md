@@ -1,10 +1,6 @@
 ---
 description: Check which lounges a card, membership or status gets you into
 argument-hint: "[access method] [airport IATA]"
-allowed-tools:
-  - mcp__airport-lounge-list__list_access_methods
-  - mcp__airport-lounge-list__find_lounges_by_access
-  - mcp__airport-lounge-list__get_lounge_details
 ---
 
 # Lounge Access

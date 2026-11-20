@@ -1,13 +1,6 @@
 ---
 description: Find the lounges at an airport, near a place, or with an amenity
 argument-hint: "[airport IATA or place] [amenity...]"
-allowed-tools:
-  - mcp__airport-lounge-list__get_airport_lounges
-  - mcp__airport-lounge-list__search_airports
-  - mcp__airport-lounge-list__find_nearby_lounges
-  - mcp__airport-lounge-list__find_lounges_by_amenity
-  - mcp__airport-lounge-list__get_lounge_details
-  - mcp__airport-lounge-list__get_lounge_busyness
 ---
 
 # Find Lounges
