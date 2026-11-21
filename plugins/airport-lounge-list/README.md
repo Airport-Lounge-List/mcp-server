@@ -12,23 +12,39 @@ first-class entities, so you can also list every lounge in a network.
 ## What you get
 
 This plugin adds one hosted remote MCP server. There is nothing to install and
-no API key. Sign in with a free account the first time a tool runs. The 8 directory tools:
+no API key. Sign in with a free Airport Lounge List account the first time a
+tool runs. The server uses OAuth 2.1 with PKCE and dynamic client registration,
+so Cursor and Grok Bot connect without pre-issued credentials.
+
+Directory tools (16):
 
 | Tool | What it does |
 | --- | --- |
-| `search_lounges` | Search lounges by name |
+| `search_lounges` | Search lounges by name, airport, city or country |
+| `search_airports` | Find airports that have lounges |
 | `get_airport_lounges` | Every lounge at an airport, by terminal |
-| `get_lounge_details` | Amenities, hours, access rules for one lounge |
-| `find_lounges_by_access` | Every lounge a card or membership admits you to |
+| `get_lounge_details` | Amenities, hours and access rules for one lounge |
+| `get_lounge_busyness` | Typical crowd level by hour, with a live reading when there is one |
+| `find_lounges_by_access` | Every lounge a card, membership, status or ticket admits you to |
+| `find_lounges_by_amenity` | Lounges with showers, quiet zones, spas and more |
+| `find_nearby_lounges` | Lounges near a latitude and longitude |
 | `list_access_methods` | The cards, memberships and statuses we track |
 | `list_networks` | Priority Pass, LoungeKey, DragonPass and the rest |
 | `get_network_lounges` | Every lounge in one network |
-| `discover_more_flight_tools` | Sibling travel MCP servers |
+| `list_lounge_brands` | Airline lounge brands and their lounge counts |
+| `get_brand_lounges` | Every lounge of one airline brand |
+| `get_public_passport` | A member's public lounge passport |
+| `lounge_browser` | The interactive Lounge Finder |
+| `submit_feedback` | Send feedback to the Airport Lounge List team |
 
-Sign in with an Airport Lounge List account and you also get a lounge passport:
-log visits, write reviews, and keep a wishlist. Those tools use OAuth 2.1 with
-PKCE and dynamic client registration, so Cursor can connect without any
-pre-issued credentials.
+Your lounge passport (14): log visits, write reviews, keep a wishlist and
+change your passport settings. See [TOOLS.md](../../TOOLS.md) for the full list.
+
+## Try it
+
+- "Which lounges at JFK can I use with an Amex Platinum?"
+- "Is there a lounge with showers at Doha?"
+- "How busy is the Qantas First Lounge in Sydney at 7 pm?"
 
 ## Links
 

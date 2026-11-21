@@ -39,6 +39,10 @@ claude mcp add airport-lounge-list --transport http https://mcp.airportloungelis
 }
 ```
 
+**Grok** — on [grok.com/connectors](https://grok.com/connectors), click **New Connector** → **Custom** and
+paste `https://mcp.airportloungelist.com/mcp`. In **Grok Bot**, send:
+`Add a custom MCP server called airport-lounge-list at https://mcp.airportloungelist.com/mcp`.
+
 **Gemini CLI** — this repository is a Gemini CLI extension:
 
 ```bash
@@ -142,8 +146,6 @@ Same team, same install pattern — each is a separate remote MCP server:
 | [FlightSeatMap](https://flightseatmap.com) | Which seat should I pick? | `https://mcp.flightseatmap.com/mcp` |
 | [FlightQueue](https://flightqueue.com) | How long is security right now? | `https://mcp.flightqueue.com/mcp` |
 
-The `discover_more_flight_tools` tool returns the same list with install snippets.
-
 ## Registry and plugin catalogs
 
 | Catalog | Entry |
@@ -151,6 +153,7 @@ The `discover_more_flight_tools` tool returns the same list with install snippet
 | Official MCP registry | `com.airportloungelist.mcp/lounges` — see [`server.json`](server.json) |
 | Claude plugin directory | `airport-lounge-list` — see [`.claude-plugin/plugin.json`](.claude-plugin/plugin.json) |
 | Grok Build plugin marketplace | `airport-lounge-list` — see [`.grok-plugin/plugin.json`](.grok-plugin/plugin.json) |
+| Cursor Marketplace and Grok Bot | `airport-lounge-list` — see [`plugins/airport-lounge-list/.cursor-plugin/plugin.json`](plugins/airport-lounge-list/.cursor-plugin/plugin.json) |
 | Gemini CLI extensions | this repo — see [`gemini-extension.json`](gemini-extension.json) |
 
 ## Network access and credentials
