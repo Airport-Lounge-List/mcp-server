@@ -18,7 +18,7 @@ with a free Airport Lounge List account the first time a tool runs.
 **Claude Code (recommended)** — installs the plugin with all skills and a guided setup:
 
 ```bash
-claude plugin marketplace add Airport-Lounge-List/mcp && claude plugin install airport-lounge-list@airport-lounge-list
+claude plugin marketplace add Airport-Lounge-List/mcp-server && claude plugin install airport-lounge-list@airport-lounge-list
 ```
 
 Then run `/airport-lounge-list:setup`.
@@ -46,7 +46,7 @@ paste `https://mcp.airportloungelist.com/mcp`. In **Grok Bot**, send:
 **Gemini CLI** — this repository is a Gemini CLI extension:
 
 ```bash
-gemini extensions install https://github.com/Airport-Lounge-List/mcp
+gemini extensions install https://github.com/Airport-Lounge-List/mcp-server
 ```
 
 **Clients without native remote-server support** can bridge with
@@ -72,6 +72,10 @@ gemini extensions install https://github.com/Airport-Lounge-List/mcp
 > Compare Priority Pass and DragonPass coverage in Asia.
 
 > Log that I visited the Qantas First Lounge in Sydney yesterday and rate it 5.
+
+## Testing
+
+See [TESTING.md](TESTING.md) for four read-only prompts that exercise the tools end to end.
 
 ## Tools
 
