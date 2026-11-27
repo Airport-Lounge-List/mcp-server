@@ -49,20 +49,6 @@ paste `https://mcp.airportloungelist.com/mcp`. In **Grok Bot**, send:
 gemini extensions install https://github.com/Airport-Lounge-List/mcp-server
 ```
 
-**Clients without native remote-server support** can bridge with
-[`mcp-remote`](https://www.npmjs.com/package/mcp-remote):
-
-```json
-{
-  "mcpServers": {
-    "airport-lounge-list": {
-      "command": "npx",
-      "args": ["-y", "mcp-remote", "https://mcp.airportloungelist.com/mcp"]
-    }
-  }
-}
-```
-
 ## Try it
 
 > Which lounges at Heathrow Terminal 5 can I use with Priority Pass?

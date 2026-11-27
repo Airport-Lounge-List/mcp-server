@@ -13,7 +13,7 @@ Guided first-run setup. Learn what the user holds, map it to access method slugs
 
 ## Workflow
 
-0. Call `list_access_methods` once. If the tool is not available, tell the user to run `claude mcp add airport-lounge-list --transport http https://mcp.airportloungelist.com/mcp`, restart Claude Code, and stop.
+0. Call `list_access_methods` once. If the tool is not available, tell the user to enable the plugin's `airport-lounge-list` server in `/mcp`, restart Claude Code, and stop.
 1. Ask ONE question: their home airport (IATA code), plus the credit cards, memberships (Priority Pass etc.) and airline status they hold.
 2. Map each item to a slug from the `list_access_methods` result. Never guess a slug. Say plainly when something is not on record. Show the confirmed list and let the user correct it.
 3. Prove it works. Call `get_airport_lounges` with the home airport. Keep the lounges whose access methods match the confirmed slugs. Show the best 3 with terminal, rating and how the user gets in.
